@@ -48,7 +48,7 @@
       </div>
     </nav>
 <p id="demo"></p>
-
+<script>
 setInterval(function () {
     var d = new Date(); //get current time
     var seconds = d.getMinutes() * 60 + d.getSeconds(); //convet current mm:ss to seconds for easier caculation, we don't care hours.
@@ -58,7 +58,7 @@ setInterval(function () {
     document.getElementById('test').innerHTML = result;
 
 }, 500) //calling it every 0.5 second to do a count down
-
+ </script>
     <!-- Hero Section -->
     <div class="main">
       <div class="main__container">
