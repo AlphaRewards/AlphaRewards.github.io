@@ -8,7 +8,7 @@ function startTimer() {
   var m = timeArray[0];
   var s = checkSecond((timeArray[1] - 1));
   if(s==59){m=m-1}
-  //if(m<0){alert('timer completed')}
+  //if(m<0){alert('The Giveaway has Ended. Refresh the page. ')}
 
   document.getElementById('timer').innerHTML =
     m + ":" + s;
