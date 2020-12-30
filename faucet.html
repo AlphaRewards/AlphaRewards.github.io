@@ -2,21 +2,41 @@
 <head>
 <script>
 
-  console.log(m)
+window.onload = function() {
 
-  setTimeout(startTimer, 1000);
+  var minute = 5;
+
+  var sec = 60;
+
+  setInterval(function() {
+
+    document.getElementById("timer").innerHTML = minute + " : " + sec;
+
+    sec--;
+
+    if (sec == 00) {
+
+      minute --;
+
+      sec = 60;
+
+      if (minute == 0) {
+
+        minute = 5;
+
+      }
+
+    }
+
+  }, 1000);
 
 }
 
-function checkSecond(sec) {
 
-  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
 
-  if (sec < 0) {sec = "59"};
 
-  return sec;
 
-}
+
 </script>
 </head>
 
